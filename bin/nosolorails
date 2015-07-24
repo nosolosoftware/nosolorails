@@ -1,0 +1,13 @@
+#! /usr/bin/env ruby
+
+source_path    = File.expand_path( File.join( File.dirname( __FILE__ ), '..', 'lib' ) )
+templates_root = File.expand_path( File.join( File.dirname( __FILE__ ), '..', 'templates' ) )
+
+$LOAD_PATH << source_path
+
+require 'nosolorails'
+
+NoSoloRails::AppGenerator.source_root templates_root
+NoSoloRails::AppGenerator.source_paths << Rails::Generators::AppGenerator.source_root << templates_root
+
+NoSoloRails::AppGenerator.start
