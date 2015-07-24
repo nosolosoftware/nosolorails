@@ -1,0 +1,76 @@
+source "https://rubygems.org"
+
+# TODO Verify each gem
+# TODO Set dynamic database gems
+# TODO Set dynamic framework tester gems
+
+#
+## General Rails gems
+#
+gem 'rails'
+gem 'angular-rails-templates'
+gem 'i18n-js'
+gem 'ngannotate-rails'
+gem 'pundit'
+gem 'sass-rails'
+gem 'uglifier'
+
+
+#
+## Assets
+#
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-ng-lodash'
+  gem 'rails-assets-ui-router'
+end
+
+#
+## Development tools
+#
+group :development do
+  gem 'better_errors'
+  gem 'guard-bundler', require: false
+  gem 'guard-rails', require: false
+  gem 'guard-rake', require: false
+  gem 'guard-rspec', require: false
+  gem 'libnotify', require: false
+end
+
+#
+## Test tools
+#
+group :test do
+  gem 'capybara-screenshot'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'fuubar'
+  gem 'poltergeist'
+  gem 'require_all' # TODO
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
+  gem 'shoulda-matchers'
+  gem 'simplecov', require: false
+end
+
+#
+## Development and Test tools
+#
+group :development, :test do
+  gem 'byebug'
+  gem 'dotenv-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry'
+  gem 'pry-byebug'
+end
+
+#
+## Production
+#
+group :production do
+  gem 'airbrake'
+  gem 'unicorn'
+end
