@@ -5,9 +5,11 @@ the following gems:
 - **General gems:**
   - [angular-rails-templates](https://github.com/pitr/angular-rails-templates)
   - [i18n-js](https://github.com/fnando/i18n-js)
+  - [mongoid](http://mongoid.org/) or [postgresql](http://www.postgresql.org.es/)
   - [ngannotate-rails](https://github.com/kikonen/ngannotate-rails)
   - [pundit](https://github.com/elabs/pundit)
   - [sass-rails](https://github.com/rails/sass-rails)
+  - [spring](https://rubygems.org/gems/spring/versions/1.3.6)
   - [uglifier](https://github.com/lautis/uglifier)
 - **Assets:**
   - [rails-assets-angular](https://rails-assets.org/)
