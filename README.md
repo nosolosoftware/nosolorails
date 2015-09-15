@@ -1,6 +1,8 @@
 # ![NSSLogo] NoSoloRails
-This is the rails generator used at NoSoloSoftware. It configures a new project with
-the following gems:
+
+This is the rails generator used at NoSoloSoftware and is based on and uses parts of the awesome
+[Suspenders](https://github.com/thoughtbot/suspenders) gem by [Thoughtbot](https://thoughtbot.com/).
+It configures a new project with the following gems:
 
 - **General gems:**
   - [angular-rails-templates](https://github.com/pitr/angular-rails-templates)

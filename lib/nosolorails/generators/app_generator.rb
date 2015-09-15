@@ -3,7 +3,7 @@ require 'rails/generators/rails/app/app_generator'
 
 module NoSoloRails
   class AppGenerator < Rails::Generators::AppGenerator
-    # TODO add class options
+    # TODO: add class options
 
     def finish_template
       invoke :nosolorails_customization
@@ -11,7 +11,7 @@ module NoSoloRails
     end
 
     def nosolorails_customization
-      # TODO add specific customization
+      # TODO: add specific customization
     end
 
     protected
